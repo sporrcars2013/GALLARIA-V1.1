@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+@font-face {
+  font-family: "Helvetica regular";
+  font-display: swap;
+  src: url("../fonts/Helvetica regular.woff") format("woff"), url("../fonts/Helvetica regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ofont";
+  font-display: swap;
+  src: url("../fonts/ofont.woff") format("woff"), url("../fonts/ofont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Novecento Bold";
+  font-display: swap;
+  src: url("../fonts/Novecento Bold.woff") format("woff"), url("../fonts/Novecento Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "seguisym";
+  font-display: swap;
+  src: url("../fonts/seguisym.woff") format("woff"), url("../fonts/seguisym.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sofia Pro Regular";
+  font-display: swap;
+  src: url("../fonts/Sofia Pro Regular.woff") format("woff"), url("../fonts/Sofia Pro Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: "PT Sans";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "PT Sans";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.page__header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+}
+
+.page__header .container {
+  max-width: 200px;
+  background-color: rgba(199, 36, 36, 0.87);
+}
+
+.page__header__body {
+  text-align: center;
+  padding: 50px 0px 30px 0px;
+}
+
+.page__header__logo p {
+  font-family: Novecentowide;
+  font-size: 37.6px;
+  line-height: 31px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #7e7d7e;
+}
+
+.page__header__logo p span {
+  color: #d66cb7;
+}
+
+.page__header__links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page__header__title {
+  font-family: PTSans;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #959595;
+}
+
+.page__side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  min-width: 0;
+}
+
+@media (max-width: 1182px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  ._container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}

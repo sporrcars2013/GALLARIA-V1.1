@@ -1,0 +1,62 @@
+.page__header {
+
+   flex: 0 0 300px;
+
+   .container {
+      max-width: 200px;
+      background-color: rgba(199, 36, 36, 0.87);
+      }
+
+
+   &__body {
+      text-align: center;
+      padding: 50px 0px 30px 0px;
+
+   }
+
+   &__logo {
+      p{
+         span{color: #d66cb7;}
+font-family: Novecentowide;
+font-size: 37.6px;
+line-height: 31px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+color: #7e7d7e; 
+      }
+   }
+
+   &__menu {
+   }
+
+   &__list {
+   }
+
+   &__links {
+      a{display: flex;}
+   }
+
+   &__about-us {
+   }
+
+   &__title {
+      font-family: PTSans;
+font-size: 32px;
+line-height: 1.2;
+font-weight: 400;
+color: #959595;
+   }
+
+   &__subtitle {
+   }
+
+   &__tags {
+   }
+
+   &__tags-top {
+   }
+
+   &__tags-video {
+   }
+}
