@@ -1,20 +1,18 @@
-.page__header {
-
-   flex: 0 0 300px;
+.header {flex: 0 0 300px;
 
    .container {
       max-width: 200px;
-      background-color: rgba(199, 36, 36, 0.87);
+      margin: 0 auto;
       }
 
-
    &__body {
-      text-align: center;
       padding: 50px 0px 30px 0px;
-
    }
 
    &__logo {
+      text-align: center;
+      img{margin-bottom: 20px;}
+      margin-bottom: 50px;
       p{
          span{color: #d66cb7;}
 font-family: Novecentowide;
@@ -22,41 +20,109 @@ font-size: 37.6px;
 line-height: 31px;
 font-weight: 700;
 text-transform: uppercase;
-letter-spacing: -0.02em;
+letter-spacing: -3px;
 color: #7e7d7e; 
       }
    }
 
+
+
    &__menu {
    }
+   display: flex;
+   flex-direction: column;
 
    &__list {
+      display: inline-block;
+      :hover{
+            background-color: rgb(66, 77, 224);
+            border-radius: 5px;
+         }
+      li{display: flex;
+         margin-bottom: 20px;
+         align-items: center;
+         
+      }
+      img{display: block;
+   background-color: rgb(114, 110, 110);
+margin-right: 20px;
+padding: 5px;
+border-radius: 50px;}
+p{
+   font-family: SegoeWP;
+font-size: 20px;
+line-height: 32px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+color: #7e7d7e;
+}
    }
 
    &__links {
-      a{display: flex;}
    }
+
+
+
+
+
 
    &__about-us {
    }
 
    &__title {
+      
       font-family: PTSans;
 font-size: 32px;
 line-height: 1.2;
 font-weight: 400;
 color: #959595;
+margin-bottom: 20px;
    }
 
    &__subtitle {
+      font-family: PTSans;
+font-size: 18px;
+line-height: 24px;
+font-weight: 400;
+color: #959595;
+
    }
 
    &__tags {
+      
    }
 
-   &__tags-top {
+   &__tags-top {display: flex;
+      margin: 25px 0px 15px 0px;
+      align-items: center;
+      p{
+         font-family: PTSans;
+font-size: 32px;
+line-height: 1.2;
+font-weight: 400;
+color: #959595;
+      }
    }
 
    &__tags-video {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0px -15px;
+      a{
+         flex: 1 1 33.333%;
+         margin: 0px 0px 20px 0px;
+         display: block;
+      }
+      span{
+      background-color: rgb(202, 187, 187);
+      border-radius: 5px;
+      font-family: PTSans;
+font-size: 16px;
+line-height: 1.2;
+font-weight: 400;
+color: #908f8f;
+padding: 5px 15px;
+      }
    }
 }

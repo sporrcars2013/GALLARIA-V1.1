@@ -140,48 +140,127 @@ h6 {
   display: flex;
 }
 
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 ._container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.page__header {
+.header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.page__header .container {
+.header .container {
   max-width: 200px;
-  background-color: rgba(199, 36, 36, 0.87);
+  margin: 0 auto;
 }
 
-.page__header__body {
-  text-align: center;
+.header__body {
   padding: 50px 0px 30px 0px;
 }
 
-.page__header__logo p {
+.header__logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header__logo img {
+  margin-bottom: 20px;
+}
+
+.header__logo p {
   font-family: Novecentowide;
   font-size: 37.6px;
   line-height: 31px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  color: #7e7d7e;
+}
+
+.header__logo p span {
+  color: #d66cb7;
+}
+
+.header__list {
+  display: inline-block;
+}
+
+.header__list :hover {
+  background-color: #424de0;
+  border-radius: 5px;
+}
+
+.header__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list img {
+  display: block;
+  background-color: #726e6e;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.header__list p {
+  font-family: SegoeWP;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   color: #7e7d7e;
 }
 
-.page__header__logo p span {
-  color: #d66cb7;
+.header__title {
+  font-family: PTSans;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #959595;
+  margin-bottom: 20px;
 }
 
-.page__header__links a {
+.header__subtitle {
+  font-family: PTSans;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #959595;
+}
+
+.header__tags-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 25px 0px 15px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.page__header__title {
+.header__tags-top p {
   font-family: PTSans;
   font-size: 32px;
   line-height: 1.2;
@@ -189,11 +268,44 @@ h6 {
   color: #959595;
 }
 
-.page__side {
+.header__tags-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.header__tags-video a {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  margin: 0px 0px 20px 0px;
+  display: block;
+}
+
+.header__tags-video span {
+  background-color: #cabbbb;
+  border-radius: 5px;
+  font-family: PTSans;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #908f8f;
+  padding: 5px 15px;
+}
+
+.side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   min-width: 0;
+  border: 1px solid #000;
+}
+
+.side__body {
+  background-color: #1aee4f;
 }
 
 @media (max-width: 1182px) {
