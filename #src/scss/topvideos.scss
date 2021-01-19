@@ -1,0 +1,26 @@
+.top-videos {display: flex;
+   
+
+   &__body {display: flex;
+      justify-content: space-between;
+
+   }
+   
+
+   &__img-text {
+      display: flex;
+      p{
+         flex: 1 1 100%;
+      }
+   }
+
+   &__messengers {display: flex;
+      border: 1px solid #000;
+      justify-content: space-between;
+      img{
+      display: block;}
+   }
+}
+.container {
+
+}
