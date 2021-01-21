@@ -575,6 +575,15 @@ h6 {
   bottom: 0;
 }
 
+.footer {
+  margin-top: 20px;
+}
+
+.footer__body {
+  background-color: #aa8080;
+  height: 76px;
+}
+
 @media (max-width: 1182px) {
   ._container {
     max-width: 970px;
