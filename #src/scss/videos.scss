@@ -42,6 +42,7 @@
 .item {
    display: flex;
    margin-bottom: 50px;
+   background-color: rgb(255, 180, 180);
    :last-child {
       margin-bottom: 0;
    }
@@ -51,8 +52,6 @@
       position: relative;
    }
 
-
-
    &__img {
       display: inline-flex;
       justify-content: center;
@@ -61,23 +60,22 @@
       background-color: rgba(19, 207, 19, 0.76);
       &:hover {
          background-color: rgb(201, 28, 163);
-
       }
 
-         div{
+      div {
          position: absolute;
          left: -30px;
          background-color: blue;
          padding: 10px 20px 10px 20px;
          border: 1px solid #000;
-         border-radius: 50%;}
-
+         border-radius: 50%;
+      }
    }
 
    &__text {
       padding: 0px 15px;
+      position: relative;
    }
-
 
    &__title {
       font-family: SofiaPro;
@@ -87,14 +85,18 @@
       color: #000000;
    }
 
-   &__more {
+   &__more {margin: 10px 10px ;
       display: flex;
-      flex: 1 1 60%;
+      align-items: center;
+      img{display: block;
+         margin-right: 5px;
+      }
+      p{
+         margin-right: 10px;}
+
       div {
-         display: flex;
-         align-items: center;
-         margin-right: 10px;
-         margin: 10px 10px 10px 10px;
+         
+      align-items: center;
 
       }
    }
@@ -108,5 +110,15 @@
    }
 
    &__arrow {
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      :first-child{
+         position: absolute;
+         right: 5px;
+         bottom: 0;
+      }
    }
 }
