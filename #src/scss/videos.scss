@@ -1,5 +1,4 @@
 .videos {
-
    &__body {
    }
 
@@ -8,24 +7,29 @@
       justify-content: flex-end;
       align-items: center;
       margin: 30px 0px;
-      p{
+      p {
          font-family: SofiaPro;
          font-size: 17px;
          line-height: 1.2;
          font-weight: 300;
          color: #8b8b8b;
       }
-      div{border-radius: 5px;display: flex;overflow: hidden;
+      div {
+         border-radius: 5px;
+         display: flex;
+         overflow: hidden;
          margin-left: 5px;
          border: 1px solid #000;
-         align-items: center;background-color: rgb(210, 216, 210);
-         a{
+         align-items: center;
+         background-color: rgb(210, 216, 210);
+         a {
             align-items: center;
-            
-            :hover{
+
+            :hover {
                background-color: rgb(102, 65, 202);
-            }}
-         img{
+            }
+         }
+         img {
             padding: 10px;
          }
       }
@@ -36,37 +40,37 @@
 }
 
 .item {
-display: flex;
-margin-bottom: 50px;
-:last-child{
-   margin-bottom: 0;
-}
+   display: flex;
+   margin-bottom: 50px;
+   :last-child {
+      margin-bottom: 0;
+   }
 
    &__video {
       display: flex;
-      
+      position: relative;
    }
 
-   &__img {
-      display: flex;
-      background-color: rgba(19, 207, 19, 0.76);
-      flex: 0 0 40%;
 
-      &__mini-img{
+
+   &__img {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 40%;
+      background-color: rgba(19, 207, 19, 0.76);
+      &:hover {
+         background-color: rgb(201, 28, 163);
+
+      }
+
+         div{
          position: absolute;
-         top: 50%;
-         width: 40px;
-         height: 40px;
-         display: block;
+         left: -30px;
+         background-color: blue;
+         padding: 10px 20px 10px 20px;
          border: 1px solid #000;
-         align-self:center;
-      }
-      &__maxi-img{
-         position: relative;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
+         border-radius: 50%;}
 
    }
 
@@ -77,32 +81,30 @@ margin-bottom: 50px;
 
    &__title {
       font-family: SofiaPro;
-font-size: 28px;
-line-height: 1.2;
-font-weight: 300;
-color: #000000;
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #000000;
    }
 
    &__more {
       display: flex;
       flex: 1 1 60%;
-      div{
+      div {
          display: flex;
          align-items: center;
          margin-right: 10px;
          margin: 10px 10px 10px 10px;
-         picture{
-            margin-right: 5px;
-         }
+
       }
    }
 
    &__subtitle {
       font-family: PTSans;
-font-size: 14px;
-line-height: 22px;
-font-weight: 400;
-color: #727272;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #727272;
    }
 
    &__arrow {
