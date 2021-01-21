@@ -47,6 +47,7 @@ body {
 }
 .page{
    display: flex;
+   flex-direction: column;
 }
 //</ОБОЛОЧКА>===========================================================================================================
 
@@ -76,6 +77,8 @@ body {
 
 @import "header";
 @import "topvideos";
+@import "big-video";
+@import "videos";
 
 
 

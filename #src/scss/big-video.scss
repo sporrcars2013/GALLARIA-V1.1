@@ -1,0 +1,33 @@
+.big-video {
+
+   &__body {
+
+   }
+
+   &__more {
+      padding: 5px;
+      align-items: center;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: space-between;
+      p{font-family: SofiaPro;
+         font-size: 18px;
+         line-height: 1.2;
+         font-weight: 300;
+         color: #a3a2a2;}
+      div{display: flex;
+      align-items: center;
+      p{
+         margin: 0px 10px 0px 10px;
+      }
+   }
+   }
+}
+
+.video {
+   border: 1px solid #000;
+   width: 100%;
+}
+.big {
+
+}
